@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background:rgb(246, 249, 239);
+    }
+    .header{
+   top:0;
+   background:white;
+   position: fixed;
+   width:100%;height:65px;
+   display: flex;
+   justify-content:space-between;
+  }
+  .listicon{
+   display:none;
+  }
+      #menuBox{
+    display:none;
+   background:white;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+  }
+  #openlist{
+    width:100%;
+    height:100%;
+  }
+     @media (max-width:750px) {
+   .header{
+   top:0;
+   background:white;
+   position: fixed;
+   width:100%;
+   height:170px;
+   display: flex;
+   justify-content:space-between;
+  }
+    #bigimg{
+ display: block;
+ margin:0 auto;
+ width:90%;
+ height:255px;
+ }
+ #btn{
+ width:115px;
+  height:35px;margin-top:20px;
+  font-size:15px; color:rgb(252, 249, 249);
+   font-family: "Roboto", sans-serif;
+}
+.listicon{
+  padding:13px; display: inline-block;
+}
+h2{
+  margin-top:60px;font-size:40px;
+}
+.snadc{
+ display: flex; gap:15px; margin-top:110px; margin-right:15px; font-size:17px; color:rgb(128, 125, 125);
+}
+.tit{
+   text-align: center;margin-top:290px; font-size:25px; font-weight:500;
+    font-family: "Roboto", sans-serif; color:rgb(37, 36, 36);
+}
+#Feature{
+  width:300px;
+}
+
+
+
+ #search{
+    display:none;
+    background:white;
+    position: fixed;
+    top:0;
+    left:20%;
+    width:80%;
+    height:100%;
+    z-index:1000;
+  }
+   #openSearch{
+   width:100%;
+    height:100%;
+  }
+  .pothom{
+    display:none;
+  }
+  #oneCard{
+      display:none;
+   background:white;
+    position: fixed;
+    top:0;
+    left:30%;
+    width:70%;
+    height:100%;
+    z-index:1000;
+  }
+  #oneincard{
+  width:100%;
+    height:100%;
+  }
+  #closelist{
+    width:40px;height:40px; border:1px solid rgb(140, 134, 134);border-radius:5px;text-align: center;line-height:40px;
+    margin-left:90%;
+  }
+   #closelist:hover{
+   background:rgb(224, 43, 43);
+   }
+ }
+</style>
+<body>
+      <div class="header">
+
+    <div class="lisst">
+         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p style="color:rgb(149, 146, 146);margin-left:25px;font-size:17px;line-height:30px;font-family: 'Roboto', sans-serif; font-weight:300;">Collections</p><p style="line-height:30px;font-size:17px;margin-left:10px;color:rgb(149, 146, 146);font-family: 'Roboto', sans-serif;font-weight: 300;">Our Story</p></div>
+    <div id="menuBox">
+      <div id="openlist">
+        <p onclick="closeMenu()" id="closelist">X</p>
+        <h4 style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300;">Collections</h4>
+        <h4 style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300; ">Our Story</h4>
+      </div>
+    </div>
+    </div>
+     <h2> Trinokabbo</h2>
+                                      <!--search-->                                               <!--cart-->
+     <div class="snadc">  <p onclick="osearch()" class="clicksearch" style="font-family: 'Roboto', sans-serif;color:rgb(94, 92, 92);margin-top:25px;">Search</p>   <p  onclick="opencart()" class="CARD" style="font-family: 'Roboto', sans-serif;color:rgb(19, 18, 18);margin-top:25px;"> Cart (0)</p></div>
+     <div id="oneCard">
+      <div id="oneincard">
+        <p onclick="closecard()" style="color:rgb(219, 28, 28);margin-left:90%;margin-top:30px; ">X</p>
+        <p style="margin-left:10%;font-size:20px;color: rgb(65, 64, 64);">Your Cart</p>
+        <hr style="width:90%; height:1px; background-color:rgb(232, 224, 224); border:none;">
+        <p style="text-align: center;color: rgb(91, 89, 89);font-size:18px;">No products in the cart .</p>
+      </div>
+     </div>
+     <div id="search">
+      <div id="openSearch">
+        <p onclick="closesearch()" id="close" >X</p>
+       <input type="text"  placeholder="Search producsts ..."><button id="sbtn">Search</button>
+      </div>
+     </div>
+  </div>
+   <script>
+  function openMenu(){
+   document.getElementById("menuBox").style.display = "flex";
+  }
+
+  function closeMenu(){
+    document.getElementById("menuBox").style.display = "none";
+  }
+
+  function osearch(){
+    document.getElementById("search").style.display = "flex";
+  }
+  function closesearch(){
+    document.getElementById("search").style.display = "none";
+  }
+  function opencart(){
+    document.getElementById("oneCard").style.display = "flex";
+  }
+  function closecard(){
+    document.getElementById("oneCard").style.display = "none";
+  }
+ </script> 
+</body>
+</html>

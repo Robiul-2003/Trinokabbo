@@ -1,534 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trinokabbo</title>
-     
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
 <style>
-  .product{
-    width:200px;
-   border:1px solid rgb(196, 192, 192);
+  body{
+    margin:0;
+    background:rgb(246, 249, 239);
   }
-  p{
-    font-size:21px;
-    font-weight: 600;margin-left:10px;
+  .header{
+   top:0;
+   background:white;
+   position: fixed;
+   width:100%;height:65px;
+   display: flex;
+   justify-content:space-between;
   }
- span{
-  font-size:16px; font-weight:300;
- }
+  .listicon{
+   display:none;
+  }
+  .pothom{
+        display: flex;
+  }
+  #menuBox{
+    display:none;
+   background:white;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+  }
+  #openlist{
+    width:100%;
+    height:100%;
+  }
   #search{
-    margin: auto;
-    width:600px;
-    height:30px;
+    display:none;
+    background:white;
+    position: fixed;
+    top:0;
+    left:70%;
+    width:30%;
+    height:100%;
+    z-index:1000;
   }
- #boxopen{
-   display:none;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.5);
-  z-index:9999;
-  justify-content:center;
-  align-items:center;
-}
-#boxopen1{
-   display:none;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.5);
-  z-index:9999;
-  justify-content:center;
-  align-items:center;
-}
-#boxcred{
+   #openSearch{
+   width:100%;
+    height:100%;position:relative;
+  }
+  #oneCard{
+      display:none;
+   background:white;
+    position: fixed;
+    top:0;
+    left:70%;
+    width:30%;
+    height:100%;
+    z-index:1000;
+  }
+  #oneincard{
   width:100%;
     height:100%;
-     overflow:auto;
-    background:white;
-    z-index:400;
-}
-#spa{
-  margin-left:90%;
-  font-size:25px; color:red;
-}
-.main-img{
-  max-width:700px;margin: auto;
-  height:500px;border:1px solid rgb(207, 201, 201);
-}
-.bigImg{
-  width:100%; text-align: center;justify-content: center;align-items: center;height:500px;
-}
-.thumbs{
-  margin: auto;margin-top:10px;
-  max-width:500px; display: flex;gap:5px;
-}
-.small{
-  width:23%; border:1px solid black;
-}
-.Cbtn{
-   
-    width:100%;
-    height:35px;color:white;font-size:18px;
-    background:black;border-radius:5px;border:none;
   }
-  @media(max-width:600px){
-    .product{
-        width:48%;
-        height: auto;
-    }
-    #search{
-        width:70%;
-    }
-    .bigImg{
-         height:400px;
-    }
-    .main-img{
-       height:400px;
-    }
-    .Cbtn{
-      width:80%;
-      margin-left:10%;
-    }
-    .thumbs{
-      width:310px;
-    }
-    .small{
-      margin: auto;
-      width:33%;
-      height:100px;
-    }
-    h4{
-     font-size:20px;
-    }
-    h3{
-      margin-left:5%;
-      font-weight: 400;
-    }
+#sbtn{
+  position:absolute;
+  right:8%;       /* input এর সাথে align */
+  top:82px;
+  transform:translateY(-50%);
+  height:30px; width:70px;
+  border:none;
+  background:rgb(223, 41, 41);
+  color:white;
+  border-radius:15px;
+  padding:0 10px;
+  cursor:pointer;
+ }
+
+ #bigimg{
+ display: block;
+ margin:0 auto;
+ width:80%;
+ height:800px;border-radius:5px; 
+ }
+#btn{
+ width:140px;
+  height:50px;margin-top:20px;
+  background:#357538; border:none; border-radius:5px;
+  color:white;font-size:18px;
+}
+.snadc{
+  gap:15px; margin-right:15px; display: flex;
+}
+.tit{
+   text-align: center;font-weight:500;margin-top:260px; font-size:40px; font-family: "Roboto", sans-serif; color:rgb(34, 33, 33);
+}
+#Feature{
+  display: block;
+  margin: auto;
+}
+ #close{
+  margin-left:85%; font-size:20px; 
+ }
+ input{
+  width:85%;
+   margin-left:5%;
+  height:35px;
+  border-radius:20px;
+  border:1px solid rgb(173, 169, 169);
+  font-size:17px;
+  padding-left:20px;
+ }
+ h2{
+  font-size:40px; line-height:0px; font-family: 'Roboto', sans-serif; font-weight: 500;color:rgb(27, 25, 25);
+ }
+/* headProduct */
+.headProduct{
+   
+  max-width:1300px; display: flex; flex-wrap: wrap;margin:auto;
+}
+.hp{
+  width:300px;
+ margin: auto;
+  background: white;
+ 
+}
+.hpi{
+  padding:10px;
+  width:95%;
+  height:300px;
+}
+#zero{
+  background: #357538;border:none;color:white;width:60px;height:25px;font-weight:800;font-family: "Roboto", sans-serif; margin-left:10px;
+}
+#review{
+  height:25px;
+  width:90px; background: white; border:1px solid rgb(10, 9, 9);font-weight:700;margin-left:15px;
+}
+#price{
+  margin-left:6px;border:none;background:white; color:rgb(91, 90, 90);font-weight:bolder;
+}
+del{
+  color:rgb(165, 161, 161);margin-left:5px;
+}
+#of{
+  border:none;
+  background:rgb(13, 82, 13); color:white;height:24px;border-radius:2px;font-size:12px;
+}
+#card{
+  margin-left:10px; width:120px;height:33px; border:none;background:rgb(242, 229, 242);border-radius:2px;font-size:17px;font-weight: bolder; color:rgb(75, 73, 73);font-family: "Roboto", sans-serif;
+}
+span{
+  margin-left:10px;
+}
+#pcgory{
+  font-size:28px; margin-top:80px;
+ text-align: center;font-family: 'Roboto', sans-serif;
+}
+.pit{
+  width:400px;
+  height:400px;
+  border:px solid red; margin: auto;
+}
+.pii{
+  width:100%;
+  height:90%;
+  border-radius:10px;
+}
+a{
+  font-size:20px;margin-left:10px;color:rgb(103, 99, 99);font-family: 'Roboto', sans-serif; margin-top:10px;
+}
+.footer{
+   max-width:1300px; display: flex; flex-wrap: wrap;margin:auto; border:px solid red;
+}
+.foot{
+  display:flex;
+  margin: auto;
+}
+#foot{
+  margin-left:20px;
+}
+.counter{
+ margin-top:30px; text-align: center; font-size:25px;border:none; background:rgb(246, 249, 239);
+}
+.TIT{
+ border:none;background:rgb(246, 249, 239);font-size:15px;
+}
+.simg{
+  width:90px;
+}
+#shesh{
+  width:100%;height:250px;background: #1e4520;
+}
+.boxin{
+   max-width:1300px; border:1px solid red;margin: auto;display: flex;flex-wrap: wrap;
+}
+#shish{
+ width:250px; border:1px solid white;color: white;margin: auto;
+}
+                                           /* phon size */
+ @media (max-width:750px) {
+   .header{
+   top:0;
+   background:white;
+   position: fixed;
+   width:100%;
+   height:170px; 
+   display: flex;
+   justify-content:space-between;
+  }
+    #bigimg{
+ display: block;
+ margin:0 auto;
+ width:90%;
+ height:255px;
+ }
+ #btn{
+ width:115px;
+  height:35px;margin-top:20px;
+  font-size:15px; color:rgb(252, 249, 249);
+   font-family: "Roboto", sans-serif;
+}
+.listicon{
+  padding:13px; display: inline-block;
+}
+h2{
+  margin-top:80px;font-size:40px;
+}
+.snadc{
+ display: flex; gap:15px; margin-top:110px; margin-right:15px; font-size:17px; color:rgb(128, 125, 125);
+}
+.tit{
+   text-align: center;margin-top:290px; font-size:25px; font-weight:500;
+    font-family: "Roboto", sans-serif; color:rgb(37, 36, 36);
+}
+#Feature{
+  width:300px;
+}
+/* headProduct */
+.headProduct{
+  display: flex; flex-wrap: wrap;margin:auto;
+}
+.hp{
+ width:225px; 
+  background: white;margin: auto;
+}
+.hpi{
+  padding:10px;
+  width:90%;
+  height:225px;
+}
+#zero{
+  background: #357538;border:none;color:white;width:60px;height:25px;font-weight:800;font-family: "Roboto", sans-serif;
+}
+#review{
+  height:25px;
+  width:90px; background: white; border:1px solid rgb(10, 9, 9);font-weight:700;
+}
+#price{
+  margin-left:6px;border:none;margin-top:5px;background:white; color:rgb(91, 90, 90);font-weight:bolder;
+}
+del{
+  color:rgb(165, 161, 161);margin-left:5px;
+}
+#of{
+  border:none;
+  background:rgb(13, 82, 13); color:white;height:24px;border-radius:2px;font-size:12px;
+}
+#card{
+  margin-left:10px;width:120px;height:33px; border:none;background:rgb(242, 229, 242);border-radius:2px;font-size:17px;font-weight: bolder; color:rgb(75, 73, 73);font-family: "Roboto", sans-serif;
+}
+ #search{
+    display:none;
+    background:white;
+    position: fixed;
+    top:0;
+    left:20%;
+    width:80%;
+    height:100%;
+    z-index:1000;
+  }
+   #openSearch{
+   width:100%;
+    height:100%;
+  }
+  .pothom{
+    display:none;
+  }
+  #oneCard{
+      display:none;
+   background:white;
+    position: fixed;
+    top:0;
+    left:30%;
+    width:70%;
+    height:100%;
+    z-index:1000;
+  }
+  #oneincard{
+  width:100%;
+    height:100%;
+  }
+  #closelist{
+    width:40px;height:40px; border:1px solid rgb(140, 134, 134);border-radius:5px;text-align: center;line-height:40px;
+    margin-left:90%;
+  }
+   #closelist:hover{
+   background:rgb(224, 43, 43);
+   }
+   .headProduct{
+    max-width:1300px;border:px solid red; display: flex; flex-wrap: wrap;margin:auto;gap:5px;
+   }
+   .clicksearch{
+    font-size:14px;
+   }
+   .CARD{
+    font-size:14px;
+   }
+   span{
+    font-size:15px;
+   }
+   #pcgory{
+  font-size:20px;margin-top:20px;
+ text-align: center;font-family: 'Roboto', sans-serif;
+}
+.pit{
+  width:47%;
+  height:250px;
+  border:px solid red; margin: auto;margin-top:10px;
+}
+.pii{
+  width:100%;
+  height:90%;
+  border-radius:5px;
+}
+a{
+  font-size:15px;margin-left:10px;color:rgb(103, 99, 99);font-family: 'Roboto', sans-serif; margin-top:10px;
+}
+.footer{
+  margin-left:10px;
+}
+.foot{
+  margin-left:0px; border:px solid red;
+}
+.simg{
+  width:100px;
+}
+#shesh{
+  width:100%;height:435px;background: #1e4520; 
+}
+}
+  /* phon size */
+  @media (max-width:520px){
+       .hp{
+            width:49%; 
+            background: white;margin: auto;
+          }
+          .snadc{
+            gap:5px;
+          }
+         h2{
+          margin-top:80px;font-size:33px;
+}
+.hpi{
+  padding:10px;
+  width:90%;
+  height:200px;
+}
+.pit{
+  width:47%;
+  height:200px;
+  border:px solid red; margin: auto;margin-top:15px;
+}
+.pii{
+  width:100%;
+  height:90%;
+  border-radius:5px;
+}
+a{
+  font-size:15px;margin-left:10px;color:rgb(103, 99, 99);font-family: 'Roboto', sans-serif; margin-top:10px;
+}
   }
 </style>
 <body>
-    <div style="max-width:1200px;display: flex; margin: auto;"><h4 onclick="window.location.href=''">Trinokabbo</h4> <input id="search" type="text" placeholder="search product" onkeyup="searchProduct()"> </div>
-<div class="products-container" style="margin: auto; max-width:1200px; display: flex; flex-wrap: wrap;gap:8px;">
-  <div class="product" data-name="one" onclick="demo()"><img src="tri.jpeg" style="width:100%;height:200px;"><p>One <br> <span>hello best product</span></p></div>
-  <div class="product" data-name="Two" onclick="demo1()"><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" style="width:100%;height:200px;"> <p>Two <br> <span>hello best product</span></p></div>
-  <div class="product" data-name="three" onclick="demo2()"><img src="Jog.jpeg" style="width:100%;height:200px;"> <p>Three <br> <span>hello best product</span></p> </div>
-  <div class="product" data-name="Four" onclick="demo3()"><img src="tri.jpeg" style="width:100%;height:200px;"><p>Four <br> <span>hello best product</span></p> </div>
-  <div class="product" data-name="Five" onclick="demo4()"><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" style="width:100%;height:200px;"> <p>Five<br> <span>hello best product</span></p> </div>
-  <div class="product" data-name="Six"  onclick="demo5()"><img src="Jog.jpeg" style="width:100%;height:200px;"><p>Six <br> <span>hello best product</span></p> </div>
-  <div class="product" data-name="Saven"  onclick="demo6()"><img src="tri.jpeg" style="width:100%;height:200px;"><p>Saven <br> <span>hello best product</span></p> </div>
-  <div class="product" data-name="Eight"  onclick="demo7()"><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" style="width:100%;height:200px;"><p>Eight<br> <span>hello best product</span></p> </div>
-  <div class="product" data-name="Nine"  onclick="demo8()"><img src="tri.jpeg" style="width:100%;height:200px;"><p>Nine <br> <span>hello best product</span></p> </div>
-  <div class="product" data-name="Ten"  onclick="demo9()"><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" style="width:100%;height:200px;"><p>Ten<br> <span>hello best product hello best product hello best product</span></p> </div>
-  <div class="product" data-name="Elevent"  onclick="demo10()"><img src="Jog.jpeg" style="width:100%;height:200px;"><p>Elevent <br> <span>hello best product</span></p> </div>
-    </div>
-<div id="boxopen">
-    <div id="boxcred"><br><br>
-        <span onclick="boxclose()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="Jog.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>One</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1-50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51-100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101-200  <br><br>  500 TK</h4>
-        </div><br><br>
-        <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box1-->
-<div id="boxopen1">
-    <div id="boxcred">
-        <span onclick="boxclose1()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="Jog.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>two</h1>
-        <h3>  High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-         <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box2-->
-<div id="boxopen2" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose2()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-         
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Three</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-        <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box3-->
-<div id="boxopen3" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose3()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="tri.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-          
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Four</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-         <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box4-->
-<div id="boxopen4" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose4()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="Jog.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-          
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Five</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-        <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box5-->
-<div id="boxopen5" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose5()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="Jog.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-           
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Six</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-        <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box6-->
-<div id="boxopen6" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose6()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="tri.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-           
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>saven</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-         <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box7-->
-<div id="boxopen7" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose7()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-          
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Eight</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-         <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box8-->
-<div id="boxopen8" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose8()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="Jog.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-        
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Nine</h1>
-        <h3>  High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-        <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box9-->
-<div id="boxopen9" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose9()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-           
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Ten</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-        <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<!--box10-->
-<div id="boxopen10" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
-    <div id="boxcred">
-        <span onclick="boxclose10()" id="spa">X</span><br><br>
-         <div class="show">
-         <div class="main-img">
-          <img class="bigImg" src="tri.jpeg">
-         </div>
-          <div class="thumbs">
-            <img src="Jog.jpeg" onclick="changeImg(this)" class="small">
-            <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" onclick="changeImg(this)" class="small">
-            <img src="tri.jpeg" onclick="changeImg(this)" class="small">
-         </div>
-        </div>
-        <div style="max-width:700px;margin: auto;">
-          <h1>Elevent</h1>
-        <h3> High-quality product, suitable for everyday use. Durable and stylish design</h3>
-        <div style="display: flex;text-align: center;">
-          <h4 style="width:110px;margin: auto;">pieces 1 - 50  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 51 - 100  <br><br>  500 TK</h4>
-        <h4 style="width:110px;margin: auto;">pieces 101 - 200  <br><br>  500 TK</h4>
-        </div><br><br>
-       <a href="https://wa.me/8801614153820?text=Hello%20I%20want%20service" target="_blank"> <button onclick="" class="Cbtn">Contact</button></a>  
-        <br><br><br>
-        </div>
-    </div>
-</div>
-<script>
-  //search box
-function searchProduct(){
-  let input = document.getElementById("search").value.toLowerCase();
-  let products = document.querySelectorAll(".product");
+  <div class="header">
 
-  products.forEach(product => {
-    let text = product.innerText.toLowerCase();
-
-    if(text.includes(input)){
-      product.style.display = "block";
-    }else{
-      product.style.display = "none";
-    }
-  });
-}
-// img 
- function changeImg(smallImg){
-     let parent = smallImg.closest(".show");
-     let big = parent.querySelector(".bigImg");
-     big.src = smallImg.src;
-    }
-
-
-function demo(){
-    document.getElementById("boxopen").style.display = "flex";
-}
-function boxclose(){
-    document.getElementById("boxopen").style.display = "none";
-}
-
-function demo1(){
-    document.getElementById("boxopen1").style.display = "flex";
-}
-function boxclose1(){
-    document.getElementById("boxopen1").style.display = "none";
-}
-
-function demo2(){
-    document.getElementById("boxopen2").style.display = "flex";
-}
-function boxclose2(){
-    document.getElementById("boxopen2").style.display = "none";
-}
-function demo3(){
-    document.getElementById("boxopen3").style.display = "flex";
-}
-function boxclose3(){
-    document.getElementById("boxopen3").style.display = "none";
-}
-function demo4(){
-    document.getElementById("boxopen4").style.display = "flex";
-}
-function boxclose4(){
-    document.getElementById("boxopen4").style.display = "none";
-}
-function demo5(){
-    document.getElementById("boxopen5").style.display = "flex";
-}
-function boxclose5(){
-    document.getElementById("boxopen5").style.display = "none";
-}
-function demo6(){
-    document.getElementById("boxopen6").style.display = "flex";
-}
-function boxclose6(){
-    document.getElementById("boxopen6").style.display = "none";
-}
-function demo7(){
-    document.getElementById("boxopen7").style.display = "flex";
-}
-function boxclose7(){
-    document.getElementById("boxopen7").style.display = "none";
-}
-
-function demo8(){
-    document.getElementById("boxopen8").style.display = "flex";
-}
-function boxclose8(){
-    document.getElementById("boxopen8").style.display = "none";
-}
-
-function demo9(){
-    document.getElementById("boxopen9").style.display = "flex";
-}
-function boxclose9(){
-    document.getElementById("boxopen9").style.display = "none";
-}
-
-function demo10(){
-    document.getElementById("boxopen10").style.display = "flex";
-}
-function boxclose10(){
-    document.getElementById("boxopen10").style.display = "none";
-}
+    <div class="lisst">
+         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p style="color:rgb(149, 146, 146);margin-left:25px;font-size:17px;line-height:30px;font-family: 'Roboto', sans-serif; font-weight:300;">Collections</p><p onclick="window.location.href='rounder.html'" style="line-height:30px;font-size:17px;margin-left:10px;color:rgb(149, 146, 146);font-family: 'Roboto', sans-serif;font-weight: 300;">Our Story</p></div>
+    <div id="menuBox">
+      <div id="openlist">
+        <p onclick="closeMenu()" id="closelist">X</p>
+        <h4 style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300;">Collections</h4>
+        <h4 onclick="window.location.href='rounder.html'" style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300; " >Our Story</h4>
+      </div>
+    </div>
+    </div>
+     <h2> Trinokabbo</h2>
+                                      <!--search-->                                               <!--cart-->
+     <div class="snadc">  <p onclick="osearch()" class="clicksearch" style="font-family: 'Roboto', sans-serif;color:rgb(94, 92, 92);margin-top:25px;">Search</p>   <p  onclick="opencart()" class="CARD" style="font-family: 'Roboto', sans-serif;color:rgb(19, 18, 18);margin-top:25px;"> Cart (0)</p></div>
+     <div id="oneCard">
+      <div id="oneincard">
+        <p onclick="closecard()" style="color:rgb(219, 28, 28);margin-left:90%;margin-top:30px; ">X</p>
+        <p style="margin-left:10%;font-size:20px;color: rgb(65, 64, 64);">Your Cart</p>
+        <hr style="width:90%; height:1px; background-color:rgb(232, 224, 224); border:none;">
+        <p style="text-align: center;color: rgb(91, 89, 89);font-size:18px;">No products in the cart .</p>
+      </div>
+     </div>
+     <div id="search">
+      <div id="openSearch">
+        <p onclick="closesearch()" id="close" >X</p>
+       <input type="text"  id="searchInput" onkeyup="searchProduct()" placeholder="Search producsts ..."><button id="sbtn" onclick="searchProduct()">Search</button>
+      </div>
+     </div>
+  </div>
+   
+  <p class="tit">From nature's touch to your smile <br> handcrafted with love.
   
-</script>
+  <br>
+  <button onclick="" id="btn">Shop Now</button>
+  </p>
+<img src="Screenshot 2026-04-29 171945.png" id="bigimg">
 
+<img src="Feature.png"  id="Feature">
+
+<div class="headProduct">
+  <div class="hp" data-name="Natural Bamboo Tray" ><img src="tri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Natural Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Tea Serving Tray" ><img src="Jog.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Tea Serving Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Multi-Layer Bamboo Tray" ><img src="Juri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p><span>Multi-Layer Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Pattern Design Bamboo Tray" ><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p> <span>Pattern Design Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+</div>
+ <p id="pcgory">Product Category</p>
+ <div class="headProduct">
+  <div class="pit"><img src="mirror.png" class="pii"><a>Jute & Textiles →</a></div>
+  <div class="pit"><img src="churi.png" class="pii"><a>Jute & Textiles →</a></div>
+  <div class="pit"><img src="light.png" class="pii"><a>Jute & Textiles →</a></div>
+  <div class="pit"><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="pii"><a>Jute & Textiles →</a></div>
+  <div class="pit"><img src="bag.png" class="pii"><a>Jute & Textiles →</a></div>
+  <div class="pit"><img src="Jog.jpeg" class="pii"><a>Jute & Textiles →</a></div>
+ </div>
+ <p id="pcgory">Home Decor</p>
+ <div class="headProduct">
+  <div class="hp" data-name="Natural Bamboo Tray" ><img src="tri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Natural Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Tea Serving Tray" ><img src="Jog.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Tea Serving Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Multi-Layer Bamboo Tray" ><img src="Juri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p><span>Multi-Layer Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Pattern Design Bamboo Tray" ><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p> <span>Pattern Design Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+</div>
+ <p id="pcgory">Office Stationary</p>
+ <div class="headProduct">
+  <div class="hp" data-name="Natural Bamboo Tray" ><img src="tri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Natural Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Tea Serving Tray" ><img src="Jog.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Tea Serving Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Multi-Layer Bamboo Tray" ><img src="Juri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p><span>Multi-Layer Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Pattern Design Bamboo Tray" ><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p> <span>Pattern Design Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+</div>
+ <p id="pcgory">Kitchen</p>
+ <div class="headProduct">
+  <div class="hp" data-name="Natural Bamboo Tray" ><img src="tri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Natural Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Tea Serving Tray" ><img src="Jog.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p>  <span>Tea Serving Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Multi-Layer Bamboo Tray" ><img src="Juri.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p><span>Multi-Layer Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+  <div class="hp" data-name="Pattern Design Bamboo Tray" ><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"> <p style="display: flex;">   <button id="zero"><i class="fa-solid fa-star"></i> 0.00</button> <button id="review">(0 reviews)</button > </p> <span>Pattern Design Bamboo Tray</span> <p p style="display: flex;"> <button id="price">1,380৳ <del> 1,700৳</del> <button id="of">19% OFF</button> </button></p><button id="card">Add to cart</button></div>
+</div>
+<p id="pcgory">Our Impact</p>
+<div class="footer">
+   <div class="foot">
+    <img src="home.png"  class="simg">
+     <p style="width:300px;">
+      <button class="counter" data-target="50">0</button>+<br><br>
+    <button class="TIT">Farmers & Artisans Empowered</button>
+     </p>
+  </div>
+
+
+  <div class="foot">
+    <img src="tv.png" class="simg">
+     <p style="width:200px;">
+    <button class="counter" data-target="10">0</button>+<br>
+    <button class="TIT">Workshops Conducted</button>
+     </p>
+  </div>
+
+  <div class="foot">
+    <img src="water.png"  class="simg">
+     <p style="width:150px;">
+      <button class="counter" data-target="20000">0</button>+ kg
+    <button class="TIT">Plastic Replaced</button>
+     </p>
+   
+  </div>
+
+  <div class="foot">
+    <img src="tree.png"  class="simg" style="height:100px;">
+
+     <p style="width:140px;">
+    <button class="counter" data-target="2800">0</button>+ <br>
+    <button class="TIT">Seeds Provided</button>
+     </p>
+  </div>
+</div>
+<p id="pcgory">@ecoeen_global</p>
+<div id="shesh">
+  <div class="boxin">
+<P style="font-size:30px;color:white;width:400px;">Trinokabbo</P>
+<div id="shish"><P>Company</P><P>Our Story</P> <P>Blog</P></div>
+<div id="shish"><P>Legal</P><P></P> Terms of Service <P>Return, Refund & Exchange Policy </P></div>
+<div id="shish"><P>Social</P><P></P>Facebook <P>Instagram</P></div>
+  </div>
+  
+</div>
+ <script src="script.js"></script> 
 </body>
 </html>
