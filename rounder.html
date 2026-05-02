@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>founder</title>
+  <title>Document</title>
 </head>
 <style>
   body{
     margin:0;
-    background:rgb(246, 249, 239);
+    background:rgb(249, 252, 244);
   }
+  /* header pothm menuBox  input  */
   .header{
    top:0;
    background:white;
@@ -24,7 +23,7 @@
    display:none;
   }
   .pothom{
-        display: flex;
+        display: flex; width:180px;border:px solid red;margin-top:5px;
   }
   #menuBox{
     display:none;
@@ -45,8 +44,8 @@
     background:white;
     position: fixed;
     top:0;
-    left:70%;
-    width:30%;
+    left:80%;
+    width:20%;
     height:100%;
     z-index:1000;
   }
@@ -59,8 +58,8 @@
    background:white;
     position: fixed;
     top:0;
-    left:70%;
-    width:30%;
+    left:80%;
+    width:20%;
     height:100%;
     z-index:1000;
   }
@@ -68,93 +67,236 @@
   width:100%;
     height:100%;
   }
+  input{
+  width:80%;
+   margin-left:5%;
+  height:40px;
+  border-radius:10px;
+  border:1px solid rgb(173, 169, 169);
+  font-size:16px;
+   padding-left:8px;
+ }
+
 #sbtn{
   position:absolute;
-  right:8%;       /* input এর সাথে align */
-  top:82px;
+  right:15%;      
+  top:110px;
   transform:translateY(-50%);
-  height:30px; width:70px;
-  border:none;
-  background:rgb(223, 41, 41);
-  color:white;
-  border-radius:15px;
-  padding:0 10px;
-  cursor:pointer;
+  height:30px; width:80px;border:none;background:rgb(223, 41, 41);color:white;border-radius:5px;cursor:pointer;font-size:14px;
  }
+  #close{
+  margin-left:85%; font-size:28px; color:rgb(154, 33, 33);
+ }
+ #YouCart{
+  margin-left:10%;font-size:24px;color: rgb(65, 64, 64);
+}
+#noproduct{
+  font-size:18px; text-align: center;
+}
+/* big img */
+ #bigimg{
+ display: block;
+ margin:0 auto;
+ width:80%;
+ height:auto;
+ border-radius:5px; 
+ }
+#btn{
+ width:150px;
+  height:50px;margin-top:20px;
+  background:#3c753f; border:none; border-radius:5px;
+  color:white;font-size:20px;
+  font-family: "Roboto", sans-serif;
+}
 .snadc{
   gap:15px; margin-right:15px; display: flex;
 }
 .tit{          /* tit */
-   text-align: center;font-weight:500;margin-top:200px; font-size:40px; font-family: "Roboto", sans-serif; color:rgb(34, 33, 33);
+   text-align: center;font-weight:500; font-size:40px; font-family: "Roboto", sans-serif; color:rgb(34, 33, 33);margin-top:200px;
+}
+#Feature{
+ 
+  display: block;
+  margin: auto; 
 }
 
- #close{
-  margin-left:85%; font-size:20px; 
- }
- input{
-  width:85%;
-   margin-left:5%;
-  height:35px;
-  border-radius:20px;
-  border:1px solid rgb(173, 169, 169);
-  font-size:17px;
-  padding-left:20px;
- }
  h2{
-  font-size:40px; line-height:0px; font-family: 'Roboto', sans-serif; font-weight: 500;color:rgb(27, 25, 25);
+  font-size:35px; line-height:15px; font-family: 'Roboto', sans-serif; font-weight: 500;color:rgb(27, 25, 25);
  }
-span{
-  margin-left:10px;
-}
+       /* headProduct */
+.headProduct{           
+             width:1300px; display: flex; flex-wrap: wrap;margin:auto; border:px solid red;
+ }
+
+
 #pcgory{
-  font-size:28px; margin-top:80px;
+  font-size:26px; margin-top:50px;
  text-align: center;font-family: 'Roboto', sans-serif;
 }
-.simg{
-  width:90px;
+ .pit{
+ width:420px;
+ height:420px;
+ margin:5px;
+ }
+.pii{
+  width:100%;
+  height:90%;
+  border-radius:10px; border:px solid red;
 }
+a{
+  font-size:18px;margin-left:5px;color:rgb(153, 148, 148);font-family: 'Roboto', sans-serif; margin-top:10px;
+}
+.clicksearch{
+font-family: 'Roboto', sans-serif;color:rgb(94, 92, 92);margin-top:15px;font-size:18px;line-height:40px;
+}
+.CARD{
+  font-family: 'Roboto', sans-serif;color: rgb(98, 94, 94);margin-top:15px;font-size:18px;line-height:40px;
+}
+#collections{
+  margin-left:5%;color: rgb(89, 87, 87);font-family: 'Roboto', sans-serif; font-weight: 300; font-size:16px;
+}
+#our{
+  font-size:16px; margin-left:10px;color: rgb(89, 87, 87);font-family: 'Roboto', sans-serif; font-weight: 300;
+}
+/* footer */
+.footer{
+   width:1300px; display: flex; flex-wrap: wrap;margin:auto; border:px solid red;
+}
+.foot{
+  display:flex; width:280px; height:150px;
+   border:px solid red;
+}
+.foot1{
+  display:flex; width:440px; height:150px;
+   border:px solid red;
+}
+
+#foot{
+  margin-left:20px;
+}
+.counter{
+ margin-top:60px; text-align: center; font-size:20px;border:none; background:rgb(246, 249, 239); margin-left:10px;
+}
+.TIT{
+ background:rgb(246, 249, 239);font-size:17px;margin-left:10px;border:none;color: rgb(114, 112, 112);
+}
+.plus{
+  font-size:20px; 
+}
+.simg{
+  width:80px;border:px solid green;
+  height:120px;margin-top:30px;
+}
+        /* sesh */
 #shesh{
-  width:100%;height:250px;background: #1e4520;
+  max-width:100%;background: #1e4520;
+}
+#seshname{
+  width:520px;border:px solid red; font-size:40px;color:white;
 }
 .boxin{
-   width:1300px; border:1px solid red;margin: auto;display: flex;flex-wrap: wrap;
+  max-width:1300px; border:px solid red;margin: auto;display: flex;flex-wrap: wrap;
 }
 #shish{
- width:250px; border:px solid white;color: white;margin: auto;
+ width:250px; border:px solid white;color: white;margin: auto;border:px solid black;
 }
-                                           /* phon size */
- @media (max-width:750px) {
-  .header{
+#company{
+  font-size:18px;color:rgb(234, 229, 229);font-family: 'Roboto', sans-serif;
+}
+#Story{
+font-family: 'Roboto', sans-serif; font-size:15px;color:#9fae9f;font-weight:400;
+}
+#Story:hover{
+  color:white;
+}
+#bangla{
+  font-size:18px;color:rgb(241, 237, 237);
+}
+
+/* fullbox */
+.fullbox{
+  margin: auto;
+  max-width:1300px; display: flex;
+  border:2px solid red;
+}
+.fullbox1{
+  margin: auto;
+  max-width:1300px; display: flex;
+  border:2px solid red;
+}
+.box1{
+  width:50%;
+}
+.box2{
+  width:50%;
+}
+                   /* phon size */
+ @media (max-width:700px) {
+   .header{
    top:0;
    background:white;
    position: fixed;
-   width:100%;height:165px;
+   width:100%;height: auto;      
    display: flex;
-   justify-content:space-between;
+   justify-content:space-between; overflow: hidden;
+  }
+  .headProduct{
+    width:100%;
+  }
+  .pothom{
+      display:none;
+  }
+  #our{
+  font-size:10px;color: rgb(73, 71, 71);
+}
+#collections{
+color: rgb(89, 87, 87);font-family: 'Roboto', sans-serif; font-weight: 300; font-size:10px;
+}
+/* img iconlist */
+  .listicon{
+    padding:10px;
+    display: block;
+    width:40px;height:40px;
+  }
+  h2{
+    font-size:25px;margin-top:60px;
+  }
+  .snadc{
+    font-size:15px;margin-top:90px;
   }
 
- 
-.listicon{
-  padding:13px; display: inline-block;
+  .tit{
+    font-size:24px;
+  }
+  .hp{
+      width:47%;height:300px;background: white; margin-top:10px;border:px solid red;
 }
-h2{
-  margin-top:80px;font-size:25px; border:2px solid red;
+.hpi{
+      padding:5px;width:94%;height:140px;border:px solid red;
 }
-.tit{
-   text-align: center;
-   margin-top:180px !important;
-   font-size:22px !important; 
-   font-weight:500;                                                border:1px solid red;
-    font-family: "Roboto", sans-serif; color:rgb(37, 36, 36);padding: 0 15px;
+  .pit{
+        width:46%;height:150px;margin-top:20px; 
+    }
+ .pii{
+  width:100%;
+ }
+ a{
+  font-size:12px;
+ }
+ .boxin{
+  max-width:800px; border:px solid red;height:auto;
 }
 
-/* headProduct */
-.headProduct{
-  display: flex; flex-wrap: wrap;margin:auto;
-  justify-content: center;
-    gap: 10px;
+
+/* bnt */
+#btn{
+ width:110px;font-size:18px;height:40px;
 }
 
+.footer{
+   width:100%; border:px solid red;
+}
+/*  search oneCard input  */
  #search{
     display:none;
     background:white;
@@ -165,116 +307,140 @@ h2{
     height:100%;
     z-index:1000;
   }
-   #openSearch{
-   width:100%;
-    height:100%;
-  }
-  .pothom{
-    display:none;
-  }
-  #oneCard{
+  input{
+  width:80%;
+   margin-left:10%;
+  height:30px;
+  border-radius:15px;
+  border:1px solid rgb(173, 169, 169);
+  font-size:15px;
+   padding-left:8px;
+ } 
+ #oneCard{
       display:none;
    background:white;
     position: fixed;
     top:0;
-    left:30%;
-    width:70%;
+    left:20%;
+    width:80%;
     height:100%;
     z-index:1000;
   }
-  #oneincard{
-  width:100%;
-    height:100%; border:1px solid rgb(188, 38, 38);
-  }
-  #closelist{
-    width:40px;height:40px; border:1px solid rgb(140, 134, 134);border-radius:5px;text-align: center;line-height:40px;
-    margin-left:90%;
-  }
-   #closelist:hover{
-   background:rgb(224, 43, 43);
-   }
-  
-   .clicksearch{
-    font-size:14px;
-   }
-   .CARD{
-    font-size:14px;
-   }
-   span{
-    font-size:15px;
-   }
-   #pcgory{
-  font-size:20px;margin-top:20px;
- text-align: center;font-family: 'Roboto', sans-serif;
+    /* pcgroy */
+ #pcgory{
+  font-size:20px;
+ }
+ /* footer */
+ .footer{
+   margin-left:10px;border:px solid red;width:90%;
 }
-
-.simg{
-  width:100px;
+/* foot */
+.foot{
+  display:flex;  height:130px;border:px solid red;
+   
 }
-#shesh{
-  width:100%;height: auto; background: #1e4520; 
+        /* sesh */
+#seshname{
+ margin-left:10px;
 }
 #shish{
- width:250px; border:px solid white;color: white;margin-left:10px;
+ height:110px;
 }
+ #shish{
+  margin-left:15px;
 }
-  /* phon size */
-  @media (max-width:520px){
-   .header{
-   top:0;
-   background:white;
-   position: fixed;
-   width:100%;height:160px;
-   display: flex;
-   justify-content:space-between;
-  }
-       
-          .snadc{
-            gap:5px;
-          }
-         h2{
-          margin-top:80px;font-size:10px;
+#bangla{
+  font-size:15px;color:rgb(241, 237, 237);  margin-left:15px;
+}
+/* seach cart */
+.snadc{
+  gap:5px;  display:flex;margin-top:70px;border:px solid red;
+}
+.clicksearch{
+  font-size:12px;
+}
+.CARD{
+   font-size:14px;color:black;
+}
+/* search box   */
+#sbtn{
+  position:absolute;
+  right:11%;      
+  top:92px;
+  transform:translateY(-50%);
+  height:25px; width:60px;border:none;background:rgb(223, 41, 41);color:white;border-radius:5px;cursor:pointer;font-size:12px;
+ }
+  #close{
+  margin-left:85%; font-size:24px; color:rgb(154, 33, 33);
+ }
+ #YouCart{
+  margin-left:10%;font-size:20px;color: rgb(65, 64, 64);
+}
+#noproduct{
+  font-size:18px; text-align: center;
+}
+/* menuBox */
+#menuBox{
+  top:0;
+  left:0;
+  width:80%;
+}
+#closelist{
+  margin-left:80%;
+  width:30px;height:30px;border-radius:4px;border:1px solid black;text-align: center;line-height:30px;
+}
+#collections{
+  font-size:16px;margin-left:30px;
+}
+#our{
+  font-size:16px;margin-left:30px;
+}
+#closelist:hover{
+   background:rgb(221, 49, 117);
+}
+.fullbox1{
+  margin: auto;
+  max-width:1300px; flex-wrap: wrap;
+  border:2px solid red;
+}
+.box1{
+  width:100%;border:1px solid green;
+}
+.bag1{
+  width:100%;border:1px solid green;
+}
+.box2{
+  width:100%;
+}
+.bag2{
+  width:100%;
 }
 
-a{
-  font-size:15px;margin-left:10px;color:rgb(103, 99, 99);font-family: 'Roboto', sans-serif; margin-top:10px;
-}
-.snadc{
- display: flex; gap:15px; margin-top:110px;  font-size:17px; color:rgb(128, 125, 125);
-}
-   .clicksearch{
-    font-size:14px;
-   }
-   .CARD{
-    font-size:14px; margin-right:0px;
-   }
-   .tit{
-    margin-top:150px;
-   }
-  }
+ }
+
 </style>
 <body>
-  <div class="header">
+   <div class="header">
 
     <div class="lisst">
-         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p style="color:rgb(149, 146, 146);margin-left:25px;font-size:17px;line-height:30px;font-family: 'Roboto', sans-serif; font-weight:300;">Collections</p><p onclick="window.location.href='rounder.html'" style="line-height:30px;font-size:17px;margin-left:10px;color:rgb(149, 146, 146);font-family: 'Roboto', sans-serif;font-weight: 300;">Our Story</p></div>
+         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p id="collections">Collections</p><p onclick="window.location.href='rounder.html'" id="our">Our Story</p></div>
     <div id="menuBox">
       <div id="openlist">
         <p onclick="closeMenu()" id="closelist">X</p>
-        <h4 style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300;">Collections</h4>
-        <h4 onclick="window.location.href='rounder.html'" style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300; " >Our Story</h4>
+        <h4 onclick="window.location.href='rounder.html'" id="collections">Collections</h4>
+        <h4 onclick="window.location.href='rounder.html'" id="our">Our Story</h4>
       </div>
     </div>
     </div>
      <h2> Trinokabbo</h2>
                                       <!--search-->                                               <!--cart-->
-     <div class="snadc">  <p onclick="osearch()" class="clicksearch" style="font-family: 'Roboto', sans-serif;color:rgb(94, 92, 92);margin-top:25px;">Search</p>   <p  onclick="opencart()" class="CARD" style="font-family: 'Roboto', sans-serif;color:rgb(19, 18, 18);margin-top:25px;"> Cart (0)</p></div>
+     <div class="snadc">  <p onclick="osearch()" class="clicksearch">Search</p>   <p  onclick="opencart()" class="CARD"> Cart (0)</p></div>
      <div id="oneCard">
       <div id="oneincard">
-        <p onclick="closecard()" style="color:rgb(219, 28, 28);margin-left:90%;margin-top:30px; ">X</p>
-        <p style="margin-left:10%;font-size:20px;color: rgb(65, 64, 64);">Your Cart</p>
+        <p onclick="closecard()"  id="close">X</p>
+        <p id="YouCart">Your Cart</p>
         <hr style="width:90%; height:1px; background-color:rgb(232, 224, 224); border:none;">
-        <p style="text-align: center;color: rgb(91, 89, 89);font-size:18px;">No products in the cart .</p>
+        <p id="noproduct">No products in the cart .</p>
       </div>
      </div>
      <div id="search">
@@ -284,17 +450,43 @@ a{
       </div>
      </div>
   </div>
-  <p class="tit">From nature's touch to your smile</p>
+   <p style="margin-top:150px;text-align: center;font-size:30px;">Our Founders’ Stories</p>
+  <p style="text-align: center;font-size:20px;">At ecoeen, our journey is shaped by two visions united by a shared mission: to create a sustainable, socially responsible future through bamboo and jute products. Meet the minds behind ecoeen:</p>
+  <div class="fullbox">
+    <div class="box1">Shohel Hossen
+Preserving Heritage, Empowering Artisans
+Founder, ecoeen
+Growing up in the heart of Bangladesh, Shohel witnessed the delicate balance between rich cultural traditions and the rising tide of environmental challenges. Streets filled with plastic waste sparked a question that stayed with him: “How can we preserve our culture while protecting the planet?”
+
+With a background in Textile engineering, Shohel could have followed a conventional career path. Instead, he chose to revive age-old bamboo craftsmanship and turn it into a modern, eco-friendly movement. His vision was clear: create products that reduce plastic use while empowering local artisans with fair wages, skill development, and stable livelihoods.
+
+Under Shohel’s guidance, ecoeen has become a platform where heritage meets sustainability, where bamboo and jute products carry not just quality and design, but also hope and opportunity for communities across Bangladesh.</div>
+    <div class="bag1"><img src="bag.png"> </div>
+  </div>
+  <div class="fullbox1">
+     <div class="box2">Shohel Hossen
+Preserving Heritage, Empowering Artisans
+Founder, ecoeen
+Growing up in the heart of Bangladesh, Shohel witnessed the delicate balance between rich cultural traditions and the rising tide of environmental challenges. Streets filled with plastic waste sparked a question that stayed with him: “How can we preserve our culture while protecting the planet?”
+
+With a background in Textile engineering, Shohel could have followed a conventional career path. Instead, he chose to revive age-old bamboo craftsmanship and turn it into a modern, eco-friendly movement. His vision was clear: create products that reduce plastic use while empowering local artisans with fair wages, skill development, and stable livelihoods.
+
+Under Shohel’s guidance, ecoeen has become a platform where heritage meets sustainability, where bamboo and jute products carry not just quality and design, but also hope and opportunity for communities across Bangladesh.</div>
+    <div class="bag2"><img src="bag.png"> </div>
+  </div>
 <div id="shesh">
   <div class="boxin">
-<P style="font-size:30px;color:white;width:400px;">Trinokabbo</P>
-<div id="shish"><P style="color:white;font-family: 'Roboto', sans-serif;font-size:18px; ">Company</P> <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Our Story</P>          <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Blog</P></div>
-<div id="shish"><P style="color:white;font-family: 'Roboto', sans-serif;font-size:18px; ">Legal</P>   <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; "> Terms of Service</P>  <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Return, Refund & Exchange Policy </P></div>
-<div id="shish"><P style="color:white;font-family: 'Roboto', sans-serif;font-size:18px; ">Social</P>  <p style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Facebook</P>           <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Instagram</P></div>
-  <hr style="width:100%; height:1px; background-color:rgb(94, 88, 88); border:none;">
-  <p style="color:white;font-family: 'Roboto', sans-serif;font-size:14px; margin-left:10px;">© 2025 ecoeen | Made with love in Bangladesh</p>
-  </div>
-</div>
+<P id="seshname">Trinokabbo</P>
+<div id="shish"><P id="company" >Company</P> <P id="Story">Our Story</P>          <P id="Story">Blog</P></div>
+<div id="shish"><P id="company">Legal</P>   <P id="Story"> Terms of Service</P>  <P id="Story">Return, Refund & Exchange Policy </P></div>
+<div id="shish"><P id="company">Social</P>  <p id="Story">Facebook</P>           <P id="Story">Instagram</P></div>
 
+  
+  <hr style="width: 100%; height:1px; background-color:rgb(133, 139, 133); border:none;">
+  <p id="bangla">© 2026 Trinokabbo | Made with love in Bangladesh</p>
+  </div>
+ 
+</div>
+  <script src="script.js"></script> 
 </body>
 </html>
