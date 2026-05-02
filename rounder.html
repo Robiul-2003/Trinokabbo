@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <title>founder</title>
 </head>
 <style>
-    body{
-        background:rgb(246, 249, 239);
-    }
-    .header{
+  body{
+    margin:0;
+    background:rgb(246, 249, 239);
+  }
+  .header{
    top:0;
    background:white;
    position: fixed;
@@ -22,7 +23,10 @@
   .listicon{
    display:none;
   }
-      #menuBox{
+  .pothom{
+        display: flex;
+  }
+  #menuBox{
     display:none;
    background:white;
     position: fixed;
@@ -36,46 +40,120 @@
     width:100%;
     height:100%;
   }
-     @media (max-width:750px) {
-   .header{
+  #search{
+    display:none;
+    background:white;
+    position: fixed;
+    top:0;
+    left:70%;
+    width:30%;
+    height:100%;
+    z-index:1000;
+  }
+   #openSearch{
+   width:100%;
+    height:100%;position:relative;
+  }
+  #oneCard{
+      display:none;
+   background:white;
+    position: fixed;
+    top:0;
+    left:70%;
+    width:30%;
+    height:100%;
+    z-index:1000;
+  }
+  #oneincard{
+  width:100%;
+    height:100%;
+  }
+#sbtn{
+  position:absolute;
+  right:8%;       /* input এর সাথে align */
+  top:82px;
+  transform:translateY(-50%);
+  height:30px; width:70px;
+  border:none;
+  background:rgb(223, 41, 41);
+  color:white;
+  border-radius:15px;
+  padding:0 10px;
+  cursor:pointer;
+ }
+.snadc{
+  gap:15px; margin-right:15px; display: flex;
+}
+.tit{          /* tit */
+   text-align: center;font-weight:500;margin-top:200px; font-size:40px; font-family: "Roboto", sans-serif; color:rgb(34, 33, 33);
+}
+
+ #close{
+  margin-left:85%; font-size:20px; 
+ }
+ input{
+  width:85%;
+   margin-left:5%;
+  height:35px;
+  border-radius:20px;
+  border:1px solid rgb(173, 169, 169);
+  font-size:17px;
+  padding-left:20px;
+ }
+ h2{
+  font-size:40px; line-height:0px; font-family: 'Roboto', sans-serif; font-weight: 500;color:rgb(27, 25, 25);
+ }
+span{
+  margin-left:10px;
+}
+#pcgory{
+  font-size:28px; margin-top:80px;
+ text-align: center;font-family: 'Roboto', sans-serif;
+}
+.simg{
+  width:90px;
+}
+#shesh{
+  width:100%;height:250px;background: #1e4520;
+}
+.boxin{
+   width:1300px; border:1px solid red;margin: auto;display: flex;flex-wrap: wrap;
+}
+#shish{
+ width:250px; border:px solid white;color: white;margin: auto;
+}
+                                           /* phon size */
+ @media (max-width:750px) {
+  .header{
    top:0;
    background:white;
    position: fixed;
-   width:100%;
-   height:170px;
+   width:100%;height:165px;
    display: flex;
    justify-content:space-between;
   }
-    #bigimg{
- display: block;
- margin:0 auto;
- width:90%;
- height:255px;
- }
- #btn{
- width:115px;
-  height:35px;margin-top:20px;
-  font-size:15px; color:rgb(252, 249, 249);
-   font-family: "Roboto", sans-serif;
-}
+
+ 
 .listicon{
   padding:13px; display: inline-block;
 }
 h2{
-  margin-top:60px;font-size:40px;
-}
-.snadc{
- display: flex; gap:15px; margin-top:110px; margin-right:15px; font-size:17px; color:rgb(128, 125, 125);
+  margin-top:80px;font-size:25px; border:2px solid red;
 }
 .tit{
-   text-align: center;margin-top:290px; font-size:25px; font-weight:500;
-    font-family: "Roboto", sans-serif; color:rgb(37, 36, 36);
-}
-#Feature{
-  width:300px;
+   text-align: center;
+   margin-top:180px !important;
+   font-size:22px !important; 
+   font-weight:500;                                                border:1px solid red;
+    font-family: "Roboto", sans-serif; color:rgb(37, 36, 36);padding: 0 15px;
 }
 
-
+/* headProduct */
+.headProduct{
+  display: flex; flex-wrap: wrap;margin:auto;
+  justify-content: center;
+    gap: 10px;
+}
 
  #search{
     display:none;
@@ -106,7 +184,7 @@ h2{
   }
   #oneincard{
   width:100%;
-    height:100%;
+    height:100%; border:1px solid rgb(188, 38, 38);
   }
   #closelist{
     width:40px;height:40px; border:1px solid rgb(140, 134, 134);border-radius:5px;text-align: center;line-height:40px;
@@ -115,18 +193,76 @@ h2{
    #closelist:hover{
    background:rgb(224, 43, 43);
    }
- }
+  
+   .clicksearch{
+    font-size:14px;
+   }
+   .CARD{
+    font-size:14px;
+   }
+   span{
+    font-size:15px;
+   }
+   #pcgory{
+  font-size:20px;margin-top:20px;
+ text-align: center;font-family: 'Roboto', sans-serif;
+}
+
+.simg{
+  width:100px;
+}
+#shesh{
+  width:100%;height: auto; background: #1e4520; 
+}
+#shish{
+ width:250px; border:px solid white;color: white;margin-left:10px;
+}
+}
+  /* phon size */
+  @media (max-width:520px){
+   .header{
+   top:0;
+   background:white;
+   position: fixed;
+   width:100%;height:160px;
+   display: flex;
+   justify-content:space-between;
+  }
+       
+          .snadc{
+            gap:5px;
+          }
+         h2{
+          margin-top:80px;font-size:10px;
+}
+
+a{
+  font-size:15px;margin-left:10px;color:rgb(103, 99, 99);font-family: 'Roboto', sans-serif; margin-top:10px;
+}
+.snadc{
+ display: flex; gap:15px; margin-top:110px;  font-size:17px; color:rgb(128, 125, 125);
+}
+   .clicksearch{
+    font-size:14px;
+   }
+   .CARD{
+    font-size:14px; margin-right:0px;
+   }
+   .tit{
+    margin-top:150px;
+   }
+  }
 </style>
 <body>
-      <div class="header">
+  <div class="header">
 
     <div class="lisst">
-         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p style="color:rgb(149, 146, 146);margin-left:25px;font-size:17px;line-height:30px;font-family: 'Roboto', sans-serif; font-weight:300;">Collections</p><p style="line-height:30px;font-size:17px;margin-left:10px;color:rgb(149, 146, 146);font-family: 'Roboto', sans-serif;font-weight: 300;">Our Story</p></div>
+         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p style="color:rgb(149, 146, 146);margin-left:25px;font-size:17px;line-height:30px;font-family: 'Roboto', sans-serif; font-weight:300;">Collections</p><p onclick="window.location.href='rounder.html'" style="line-height:30px;font-size:17px;margin-left:10px;color:rgb(149, 146, 146);font-family: 'Roboto', sans-serif;font-weight: 300;">Our Story</p></div>
     <div id="menuBox">
       <div id="openlist">
         <p onclick="closeMenu()" id="closelist">X</p>
         <h4 style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300;">Collections</h4>
-        <h4 style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300; ">Our Story</h4>
+        <h4 onclick="window.location.href='rounder.html'" style="margin-left:5%;color: rgb(98, 94, 94);font-family: 'Roboto', sans-serif; font-weight: 300; " >Our Story</h4>
       </div>
     </div>
     </div>
@@ -144,31 +280,21 @@ h2{
      <div id="search">
       <div id="openSearch">
         <p onclick="closesearch()" id="close" >X</p>
-       <input type="text"  placeholder="Search producsts ..."><button id="sbtn">Search</button>
+       <input type="text"  id="searchInput" onkeyup="searchProduct()" placeholder="Search producsts ..."><button id="sbtn" onclick="searchProduct()">Search</button>
       </div>
      </div>
   </div>
-   <script>
-  function openMenu(){
-   document.getElementById("menuBox").style.display = "flex";
-  }
+  <p class="tit">From nature's touch to your smile</p>
+<div id="shesh">
+  <div class="boxin">
+<P style="font-size:30px;color:white;width:400px;">Trinokabbo</P>
+<div id="shish"><P style="color:white;font-family: 'Roboto', sans-serif;font-size:18px; ">Company</P> <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Our Story</P>          <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Blog</P></div>
+<div id="shish"><P style="color:white;font-family: 'Roboto', sans-serif;font-size:18px; ">Legal</P>   <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; "> Terms of Service</P>  <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Return, Refund & Exchange Policy </P></div>
+<div id="shish"><P style="color:white;font-family: 'Roboto', sans-serif;font-size:18px; ">Social</P>  <p style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Facebook</P>           <P style="color:rgb(206, 199, 199);font-family: 'Roboto', sans-serif; ">Instagram</P></div>
+  <hr style="width:100%; height:1px; background-color:rgb(94, 88, 88); border:none;">
+  <p style="color:white;font-family: 'Roboto', sans-serif;font-size:14px; margin-left:10px;">© 2025 ecoeen | Made with love in Bangladesh</p>
+  </div>
+</div>
 
-  function closeMenu(){
-    document.getElementById("menuBox").style.display = "none";
-  }
-
-  function osearch(){
-    document.getElementById("search").style.display = "flex";
-  }
-  function closesearch(){
-    document.getElementById("search").style.display = "none";
-  }
-  function opencart(){
-    document.getElementById("oneCard").style.display = "flex";
-  }
-  function closecard(){
-    document.getElementById("oneCard").style.display = "none";
-  }
- </script> 
 </body>
 </html>
