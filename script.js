@@ -1,65 +1,3 @@
-/*  function openMenu(){
-   document.getElementById("menuBox").style.display = "flex";
-  }
-
-  function closeMenu(){
-    document.getElementById("menuBox").style.display = "none";
-  }
-
-  function osearch(){
-    document.getElementById("search").style.display = "flex";
-  }
-  function closesearch(){
-    document.getElementById("search").style.display = "none";
-  }
-  function opencart(){
-    document.getElementById("oneCard").style.display = "flex";
-  }
-  function closecard(){
-    document.getElementById("oneCard").style.display = "none";
-  }
-
-
-
-
-
-function searchProduct(){
-  let input = document.getElementById("searchInput").value.toLowerCase();
-  let products = document.querySelectorAll(".hp");
-
-  products.forEach(function(product){
-    let name = product.getAttribute("data-name");
-
-    if(name){
-      name = name.toLowerCase();
-    } else {
-      name = "";
-    }
-
-    if(name.includes(input)){
-      product.style.display = "";   // ✅ important fix
-    }else{
-      product.style.display = "none";
-    }
-  });
-
-
-window.onload = function () {
-  let count = 0;
-  let target = 50;
-
-  let counter = document.getElementById("counter");
-
-  let interval = setInterval(() => {
-    count++;
-    counter.innerText = count;
-
-    if (count >= target) {
-      clearInterval(interval);
-    }
-  }, 30);
-};
-}*/
 function openMenu(){
   document.getElementById("menuBox").style.display = "flex";
 }
@@ -83,6 +21,14 @@ function opencart(){
 function closecard(){
   document.getElementById("oneCard").style.display = "none";
 }
+function collections() {
+  document.getElementById("collec").style.display = "flex";
+}
+
+function colleclose() {
+  document.getElementById("collec").style.display = "none";
+}
+
 /*search Product */
 function searchProduct(){
   let input = document.getElementById("searchInput").value.toLowerCase();
@@ -141,3 +87,10 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(footer);
+
+
+function goPage(url, page){
+  localStorage.setItem("activePage", page);
+  window.location.href = url;
+}
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Details</title>
+</head>
+<body>
+
+  <img id="pimg" style="width:200px;">
+  <h2 id="pname"></h2>
+  <p id="pprice"></p>
+
+  <script>
+    let product = JSON.parse(localStorage.getItem("product"));
+
+    document.getElementById("pimg").src = product.image;
+    document.getElementById("pname").innerText = product.name;
+    document.getElementById("pprice").innerText = product.price;
+  </script>
+
+</body>
+</html>

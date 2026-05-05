@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Trinokabbo</title>
+  <title>Trinokabbo-Shop</title>
 </head>
 <style>
   body{
     margin:0;
-    background:rgb(249, 252, 244);
+    background:white;
   }
   /* header pothm menuBox  input  */
   .header{
@@ -95,21 +95,6 @@
 #noproduct{
   font-size:18px; text-align: center;
 }
-/* big img */
- #bigimg{
- display: block;
- margin:0 auto;
- width:80%;
- height:auto;
- border-radius:5px; 
- }
-#btn{
- width:150px;
-  height:50px;margin-top:20px;
-  background:#3c753f; border:none; border-radius:5px;
-  color:white;font-size:20px;
-  font-family: "Roboto", sans-serif;
-}
 .snadc{
   gap:15px; margin-right:15px; display: flex;
 }
@@ -125,37 +110,12 @@
  h2{
   font-size:35px; line-height:15px; font-family: 'Roboto', sans-serif; font-weight: 500;color:rgb(27, 25, 25);
  }
-
-
-  #collec{
-    display:none;
-    background:white;
-    position: fixed;
-    top:0;
-    bottom:20%;
-    left:0;
-    width:110%;
-    height:50%;
-    z-index:1000;
-  }
-   #coll{
-   width:100%;
-    height:100%;position:relative;
-  }
-
-
-
-
-
-
-
-
        /* headProduct */
 .headProduct{           
-             width:1300px; display: flex; flex-wrap: wrap;margin:auto; border:px solid red;
+             width:1100px; display: flex; flex-wrap: wrap;margin:auto; border:px solid red;margin-top:50px;
  }
 .hp{
- width:300px;
+ width:25%;
  height:460px;
   background: white;
   border:px solid green;margin: auto;
@@ -179,10 +139,10 @@
   margin-left:10px;font-size:18px;font-family: "Roboto", sans-serif; color:rgb(62, 59, 59);padding-top:20px; font-weight:300;
 }
 #price{
-  margin-left:10px;border:none;background:white; color:black;font-weight:600;font-size:18px;margin-top:10px;
+  margin-left:10px;border:none;background:white; color:#958e09;font-weight:600;font-size:18px;margin-top:10px;
 }
 del{
-  color:rgb(165, 161, 161);font-size:16px;font-weight:200;
+  color:#9e9938;font-size:16px;font-weight:200;
 }
 #of{
   width:70px;height:20px;border:1px solid #357538;background-color: #357538;color:white; font-size:14px; display:inline-block;text-align: center;font-weight:bolder;line-height:20px;
@@ -191,10 +151,7 @@ del{
   height:30px;width:130px;background:rgb(237, 235, 237);margin-left:10px;font-size:18px; font-weight: bolder; display:inline-block; text-align: center;line-height:28px;margin-top:20px;color:rgb(27, 26, 26);border-radius:1px;
 }
 
-#pcgory{
-  font-size:26px; margin-top:50px;
- text-align: center;font-family: 'Roboto', sans-serif;
-}
+
  .pit{
  width:420px;
  height:420px;
@@ -274,6 +231,24 @@ font-family: 'Roboto', sans-serif; font-size:15px;color:#9fae9f;font-weight:400;
 #bangla{
   font-size:18px;color:rgb(241, 237, 237);
 }
+#new{
+   display: flex; margin-top:200px;border:px solid red; max-width:1100px;margin: auto;justify-content: space-between;
+}
+#shop{
+    font-size:40px;font-family: 'Roboto', sans-serif;font-weight: bold;
+}
+#showing{
+    font-size:18px;font-weight:300;margin-top:15px;
+}
+select{
+    height:40px;width:220px;font-family: 'Roboto', sans-serif;font-size:16px;padding-left:15px;margin-top:40px;border-radius:3px;
+}
+.btn1{
+  width:35px;height:35px;border-radius:0px;border:1px solid rgb(145, 139, 139);
+}
+.btn1:active{
+   background: red;
+}
                    /* phon size */
  @media (max-width:700px) {
    .header{
@@ -331,10 +306,6 @@ color: rgb(89, 87, 87);font-family: 'Roboto', sans-serif; font-weight: 300; font
   max-width:800px; border:px solid red;height:auto;
 }
 
-/* big img  */
-#bigimg{
-  width:90%;
-}
 /* bnt */
 #btn{
  width:110px;font-size:18px;height:40px;
@@ -398,10 +369,7 @@ del{
     height:100%;
     z-index:1000;
   }
-    /* pcgroy */
- #pcgory{
-  font-size:20px;
- }
+
  /* footer */
  .footer{
    margin-left:10px;border:px solid red;width:90%;
@@ -470,6 +438,18 @@ del{
 #closelist:hover{
    background:rgb(221, 49, 117);
 }
+#new{
+ display: flex;   margin-top:200px;border:px solid red; max-width:1100px;margin: auto;margin-top:100px;
+}
+#shop{
+    font-size:26px;font-family: 'Roboto', sans-serif;font-weight: bold;margin-left:5%;
+}
+#showing{
+    font-size:16px;font-weight:300;margin-top:15px;display: block;
+}
+select{
+    height:40px;width:180px;font-family: 'Roboto', sans-serif;font-size:14px;padding-left:0px;margin-top:80px;border-radius:3px;margin-right:5%;
+}
  }
 
 </style>
@@ -477,27 +457,11 @@ del{
   <div class="header">
 
     <div class="lisst">
-         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p onmouseenter="collections()"  id="collections">Collections</p><p onclick="window.location.href='rounder.html'" id="our">Our Story</p></div>
-
-           <div id="collec"
-           onmouseenter="collections()"
-           onmouseleave="colleclose()"
-            
-           >                                                                                              
-      <div id="coll">
-        <h4 >hello</h4>
-        <h4>hello</h4>
-      </div>
-    </div>
-
-
-
-
-
-    <div id="menuBox">                                                                                              
+         <img src="listicon.png" onclick="openMenu()" class="listicon"> <div class="pothom"> <p id="collections">Collections</p><p onclick="window.location.href='rounder.html'" id="our">Our Story</p></div>
+    <div id="menuBox">
       <div id="openlist">
         <p onclick="closeMenu()" id="closelist">X</p>
-        <h4 onmouseenter="collections()" onmouseleave="collections()" id="collections">Collections</h4>
+        <h4 onclick="window.location.href='rounder.html'" id="collections">Collections</h4>
         <h4 onclick="window.location.href='rounder.html'" id="our">Our Story</h4>
       </div>
     </div>
@@ -519,90 +483,56 @@ del{
        <input type="text"  id="searchInput" onkeyup="searchProduct()" placeholder="Search producsts ..."><button id="sbtn" onclick="searchProduct()">Search</button>
       </div>
      </div>
-  </div>
+  </div><br><br><br><br>
+  <div id="new">
+     <div id="shop">Shop
+ <div id="showing">Showing 1–16 of 18 results</div> </div>
+
+ <select>
+    <option selected>deafult soting</option>
+    <option>sort by popularity </option>
+    <option>sort by averagriting </option>
+    <option>sort by latest </option>
+    <option>sort by price: low to height </option>
+    <option>sort by price: height-low </option>
    
-  <p class="tit">From nature's touch to your smile <br> handcrafted with love.
-  <br>
-  <button onclick="window.location.href='shop.html'" id="btn">Shop Now</button>
-  </p>
-<img src="Screenshot 2026-04-29 171945.png" id="bigimg">
-
-<img src="Feature.png"  id="Feature">
-
+ </select>
+  </div>
 <div class="headProduct">
   <div class="hp" data-name="Natural Bamboo Tray" ><img src="tri.jpeg" class="hpi"><p style="display: flex;">                                          <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp ></p> <br>    <samp id="name">Natural Bamboo Tray</samp>        <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del>      <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Tea Serving Tray" ><img src="Jog.jpeg" class="hpi"><p style="display: flex;">                                             <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br>  <samp id="name">Tea Serving Tray</samp>           <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del>      <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Multi-Layer Bamboo Tray" ><img src="Juri.jpeg" class="hpi"><p style="display: flex;">                                     <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p>  <br> <samp id="name">Multi-Layer Bamboo</samp>         <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del>      <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Pattern Design Bamboo Tray" ><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"><p style="display: flex;"> <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p>  <br> <samp id="name">Pattern Design Bamboo </samp> <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del>      <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
 </div>
- <p id="pcgory">Product Category</p>
- <div class="headProduct">
-  <div class="pit"><img src="mirror.png" class="pii"><a>Jute & Textiles →</a></div>
-  <div class="pit"><img src="churi.png" class="pii"><a>Jute & Textiles →</a></div>
-  <div class="pit"><img src="light.png" class="pii"><a>Jute & Textiles →</a></div>
-  <div class="pit"><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="pii"><a>Jute & Textiles →</a></div>
-  <div class="pit"><img src="bag.png" class="pii"><a>Jute & Textiles →</a></div>
-  <div class="pit"><img src="Jog.jpeg" class="pii"><a>Jute & Textiles →</a></div>
- </div>
- <p id="pcgory">Home Decor</p>
+
  <div class="headProduct">
   <div class="hp" data-name="Natural Bamboo Tray" >        <img src="tri.jpeg" class="hpi"> <p style="display: flex;">                                 <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Natural Bamboo Tray</samp>         <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Tea Serving Tray" >          <img src="Jog.jpeg" class="hpi"> <p style="display: flex;">                                  <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Tea Serving Tray</samp>            <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Multi-Layer Bamboo Tray" >   <img src="Juri.jpeg" class="hpi"> <p style="display: flex;">                                 <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Multi-Layer Bamboo </samp>         <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Pattern Design Bamboo Tray" ><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"> <p style="display: flex;"><samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Pattern Design Bamboo</samp>  <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
 </div>
- <p id="pcgory">Office Stationary</p>
+
  <div class="headProduct">
   <div class="hp" data-name="Natural Bamboo Tray" >       <img src="tri.jpeg" class="hpi"> <p style="display: flex;">                                  <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br>  <samp id="name">Natural Bamboo Tray</samp>        <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Tea Serving Tray" >          <img src="Jog.jpeg" class="hpi"> <p style="display: flex;">                                  <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Tea Serving Tray</samp>           <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Multi-Layer Bamboo Tray" >   <img src="Juri.jpeg" class="hpi"> <p style="display: flex;">                                 <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Multi-Layer Bamboo </samp>        <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Pattern Design Bamboo Tray" ><img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"> <p style="display: flex;"><samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p><br>  <samp id="name">Pattern Design Bamboo </samp> <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
 </div>
- <p id="pcgory">Kitchen</p>
+
  <div class="headProduct">
   <div class="hp" data-name="Natural Bamboo Tray" >       <img src="tri.jpeg" class="hpi"> <p style="display: flex;">                                  <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Natural Bamboo Tray</samp>        <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Tea Serving Tray" >          <img src="Jog.jpeg" class="hpi"> <p style="display: flex;">                                  <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Tea Serving Tray</samp>           <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Multi-Layer Bamboo Tray">    <img src="Juri.jpeg" class="hpi"> <p style="display: flex;">                                 <samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Multi-Layer Bamboo </samp>        <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
   <div class="hp" data-name="Pattern Design Bamboo Tray"> <img src="WhatsApp Image 2026-04-28 at 00.05.38.jpeg" class="hpi"> <p style="display: flex;"><samp id="zero"><i class="fa-solid fa-star"></i> 0.00</samp> <samp id="review">0 reviews</samp > </p> <br> <samp id="name">Pattern Design Bamboo </samp> <p  style="display: flex;"> <samp id="price">1,380৳ <del> 1,700৳</del> <samp id="of">19% OFF</samp> </samp></p><samp id="card">Add to cart</samp></div>
 </div>
-<p id="pcgory">Our Impact</p>
-<div class="footer">
-   <div class="foot1">
-    <img src="home.png"  class="simg">
-     <p >
-      <button class="counter" data-target="50">0</button><span class="plus">+</span><br>
-    <button class="TIT">Farmers & Artisans Empowered</button>
-     </p>
-  </div>
-
-
-  <div class="foot">
-    <img src="tv.png" class="simg">
-     <p>
-    <button class="counter" data-target="10">0</button><span class="plus">+</span><br>
-    <button class="TIT">Workshops Conducted</button>
-  </p>
-  </div>
-
-  <div class="foot">
-    <img src="water.png"  class="simg">
-     <p>
-      <button class="counter" data-target="20000">0</button><span class="plus">+ kg</span><br>
-    <button class="TIT">Plastic Replaced</button>
-     </p>
-   
-  </div>
-
-  <div class="foot">
-    <img src="tree.png"  class="simg">
-
-     <p>
-    <button class="counter" data-target="2800">0</button> <span class="plus">+</span><br>
-    <button class="TIT">Seeds Provided</button>
-     </p>
-  </div>
+<br><br>
+<div style="margin: auto;width:120px;">
+<button class="btn1" onclick="goPage('shop.html',1)">1</button>
+<button class="btn1" onclick="window.location.href='shop2.html'">2</button>
+<button class="btn1" onclick="window.location.href='shop2.html'"> →</button>
 </div>
-<p id="pcgory">@Trinokabbo</p>
+
+<br><br>
 <div id="shesh">
   <div class="boxin">
 <P id="seshname">Trinokabbo</P>
